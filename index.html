@@ -38,7 +38,10 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Fontawesome.css -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-
+    <!-- card.css 自訂 -->
+    <link rel="stylesheet" href="./css/card.css">
+    <!-- nav.css 自訂 -->
+    <link rel="stylesheet" href="./css/nav.css">
 
 
     <!-- Modernizr JS -->
@@ -52,42 +55,21 @@
 
 <body>
     <!-- Navigaion -->
-    <nav id="colorlib-main-nav" role="navigation">
-        <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
-        <div class="js-fullheight colorlib-table">
-            <div class="colorlib-table-cell js-fullheight">
-                <div class="row">
-                    <div class="col-md-12">
-                        <ul>
-                            <li class="active"><a href="index.html">Home</a></li>
-                            <li><a href="#education">Education</a></li>
-                            <li><a href="#skills">Skills</a></li>
-                            <li><a href="#works">Work</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#footer">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="head-title">Works</h2>
-                        <a href="#work" class="gallery text-center" style="background-image: url(images/netflix.png);">
-                            <span><i class="icon-search3"></i></span>
-                        </a>
-                        <a href="images/work-2.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-2.jpg);">
-                            <span><i class="icon-search3"></i></span>
-                        </a>
-                        <a href="images/work-3.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-3.jpg);">
-                            <span><i class="icon-search3"></i></span>
-                        </a>
-                        <a href="images/work-4.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-4.jpg);">
-                            <span><i class="icon-search3"></i></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
+    <div class="navContainer">
+        <div class="navigation">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <ul class="menu">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#works">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
         </div>
-    </nav>
+    </div>
     <!-- About -->
     <div id="colorlib-page">
         <header>
@@ -97,7 +79,6 @@
                         <div class="colorlib-navbar-brand">
                             <a class="colorlib-logo" href="index.html"><span>Jona</span><span>Lee</span></a>
                         </div>
-                        <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
                     </div>
                 </div>
             </div>
@@ -173,21 +154,31 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 services animate-box">
-                            <h3 style="margin-left: 2.5rem;">National Taiwan University</h3>
-                            <ul>
-                                <li>Department of Mechanical Engineering (2015 – 2016)</li>
-                                <li>Department of Economics (2017 – 2019)</li>
-                            </ul>
-                            <h3 style="margin-left: 2.5rem;">Course Taken</h3>
-                            <ol>
-                                <li>Investment Theory (A+)</li>
-                                <li>Financial Management (A+)</li>
-                                <li>Accounting (A+)</li>
-                                <li>Macroeconomics (A+)</li>
-                                <li>Introduction to Computer Science (A+)</li>
-                                <li>Competitive Intelligence (A)</li>
-                                <li>Microeconomics (A)</li>
-                            </ol>
+                            <div class="col-md-12">
+                                <h3 style="margin-left: 2.5rem;">National Taiwan University</h3>
+                                <ul>
+                                    <li>Department of Mechanical Engineering (2015 – 2016)</li>
+                                    <li>Department of Economics (2017 – 2019)</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 style="margin-left: 2.5rem;">Course Taken</h3>
+                                <ul>
+                                    <div id="myProgress">
+                                        <div id="myBar">A+</div>
+                                    </div>
+                                    <li>Investment Theory (A+)</li>
+                                    <li>Financial Management (A+)</li>
+                                    <li>Accounting (A+)</li>
+                                    <li>Macroeconomics (A+)</li>
+                                    <li>Introduction to Computer Science (A+)</li>
+                                    <div id="myProgress">
+                                        <div id="myBar1">A</div>
+                                    </div>
+                                    <li>Competitive Intelligence (A)</li>
+                                    <li>Microeconomics (A)</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -217,38 +208,74 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 services animate-box">
-                        <h3 style="margin-left: 2.5rem;">1 - Economics</h3>
-                        <ul>
-                            <li>Construct portfolios </li>
-                            <li>Financial Management</li>
-                            <li>Understand Futures &amp; Options</li>
-                            <li>Utilize Statistic model</li>
-                            <li>Apply Game Theory</li>
-                        </ul>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="./images/economics.jpg" alt="Avatar">
+                                </div>
+                                <div class="flip-card-back">
+                                    <h1>Economics</h1>
+                                    <ul>
+                                        <li>Construct portfolios</li>
+                                        <li>Financial Management</li>
+                                        <li>Understand Futures &amp; Options</li>
+                                        <li>Utilize Statistic model</li>
+                                        <li>Apply Game Theory</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-3 services animate-box">
-                        <h3 style="margin-left: 2.5rem;">2 - Languages</h3>
-                        <ul>
-                            <li>Chinese(Native)</li>
-                            <li>English(Toeic: 865)</li>
-                            <li>Japanese</li>
-                        </ul>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="./images/language.jpg">
+                                </div>
+                                <div class="flip-card-back">
+                                    <h1>Languages</h1>
+                                    <ul>
+                                        <li>Chinese(Native)</li>
+                                        <li>English(Toeic: 865)</li>
+                                        <li>Japanese</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-3 services animate-box">
-                        <h3 style="margin-left: 2.5rem;">3 - Front End Development</h3>
-                        <ul>
-                            <li>HTML / CSS</li>
-                            <li>JS &amp; Jquery Startup</li>
-                        </ul>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="./images/frontProgramming.jpg">
+                                </div>
+                                <div class="flip-card-back">
+                                    <h1>Front End Development</h1>
+                                    <ul>
+                                        <li>HTML / CSS</li>
+                                        <li>JS &amp; Jquery Startup</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-3 services animate-box">
-                        <h3 style="margin-left: 2.5rem;">4 - Programing</h3>
-                        <ul>
-                            <li>Python</li>
-                            <li>Java</li>
-                        </ul>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="./images/coding.jpg" alt="Avatar">
+                                </div>
+                                <div class="flip-card-back">
+                                    <h1>Programming</h1>
+                                    <ul>
+                                        <li>Python</li>
+                                        <li>Java</li>
+                                        <li>C++</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -355,6 +382,8 @@
     <!-- Main JS (Do not remove) -->
     <script src="js/main.js"></script>
 
+    <!-- Progress bar (自訂)-->
+    <script src="./js/progress.js"></script>
 </body>
 
 </html>

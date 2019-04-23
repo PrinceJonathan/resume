@@ -1,0 +1,9 @@
+#myBar1 {
+    width: 10%;
+    height: 30px;
+    background-color: #5bc0de;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 30px;
+    color: #ffffff;
+}
