@@ -14,7 +14,7 @@
 .navigation {
     position: relative;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
     background: #ffffff;
     padding: 20px;
@@ -64,7 +64,7 @@
 .navigation span {
     position: absolute;
     left: 26px;
-    width: 32px;
+    width: 28px;
     height: 4px;
     background: #666;
     pointer-events: none;
