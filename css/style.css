@@ -464,7 +464,7 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
 #colorlib-contact,
 #colorlib-about {
     padding-top: 10em;
-    padding-bottom: 10em;
+    /* padding-bottom: 10em; */
     clear: both;
     position: relative;
 }
