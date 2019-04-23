@@ -5,6 +5,7 @@
 .navContainer {
     margin: 0;
     padding: 0;
+    justify-content: flex-end;
     display: flex;
     align-items: center;
     font-family: "Karla", Arial, sans-serif;
